@@ -1,0 +1,573 @@
+/*Main CSS*/
+.App {
+  background: rgb(5, 41, 38);
+  background: linear-gradient(
+    0deg,
+    rgba(5, 41, 38, 1) 0%,
+    rgba(8, 25, 23, 1) 100%
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: -2000px;
+}
+
+/*Colour scheme */
+:root {
+  --mint1: hsl(173, 50%, 6.6%);
+  --mint2: hsl(176, 73%, 7.3%);
+  --mint3: hsl(175, 79.3%, 8.9%);
+  --mint4: hsl(174, 84.8%, 10.3%);
+  --mint5: hsl(174, 90.2%, 11.9%);
+  --mint6: hsl(173, 96%, 13.8%);
+  --mint7: hsl(172, 100%, 16.8%);
+  --mint8: hsl(170, 100%, 21.4%);
+  --mint9: hsl(167, 65%, 66%);
+  --mint10: hsl(163, 80%, 77%);
+  --mint11: hsl(167, 70%, 48%);
+  --mint12: hsl(165, 80%, 94.8%);
+  --accent: rgb(255, 186, 82);
+}
+
+.footer {
+  text-align: center;
+  color: var(--mint9);
+  background-color: transparent;
+  margin-top: 100px;
+}
+
+.footer p {
+  font-family: "Monsieur La Doulaise", cursive;
+  font-size: 50px;
+}
+
+/*Homepage CSS*/
+.homePage {
+  text-align: center;
+}
+
+#header_subtitle {
+  color: var(--mint12);
+  margin-top: -20px;
+}
+
+.homePage h2 {
+  color: var(--mint12);
+  font-family: "Castoro Titling", cursive;
+  text-align: left;
+}
+
+.homePage hr {
+  color: aqua;
+}
+
+.movie-list > .row {
+  overflow-x: auto;
+  flex-wrap: nowrap;
+}
+
+.movie-list {
+  margin: 60px;
+}
+
+.movie-list img {
+  height: 350px;
+}
+
+.navBar {
+  margin-bottom: 100px;
+  margin-left: -600px;
+  background-color: var(--mint2);
+}
+
+.navBar a {
+  color: var(--mint12);
+  font-family: "Castoro Titling", cursive;
+}
+
+.navBar a:hover {
+  color: rgb(255, 186, 82) !important;
+}
+
+.navBar p {
+  color: var(--mint12);
+  font-family: "Castoro Titling", cursive;
+}
+
+.navBar button {
+  color: var(--mint12);
+  font-family: "Castoro Titling", cursive;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  padding-left: 10px;
+}
+
+.navBar button:hover {
+  color: rgb(255, 186, 82) !important;
+}
+
+.logout_btn {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: rgb(255, 186, 82);
+
+  border: 1px solid rgb(255, 186, 82);
+  border-radius: 2px;
+
+  background-color: transparent;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.logout_btn:hover {
+  color: rgba(45, 12, 98, 1);
+  background-color: rgb(255, 186, 82);
+}
+
+.homePage #header {
+  color: var(--mint11);
+  font-family: "Castoro Titling", cursive;
+  font-size: 75px;
+  margin-top: 100px;
+}
+
+.homePage #quote {
+  height: auto;
+  margin: 30px;
+
+  color: rgb(255, 186, 82);
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.7;
+  font-weight: bold;
+  text-align: center;
+}
+
+.homePage #icon {
+  color: var(--mint12);
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.homePage #name {
+  font-family: "Monsieur La Doulaise", cursive;
+  color: var(--mint12);
+  font-size: 40px;
+}
+
+.homePage h3 {
+  color: var(--mint12);
+  font-family: "Castoro Titling", cursive;
+  padding: 30px;
+}
+
+/*Movie page CSS*/
+
+.moviePage {
+  text-align: center;
+}
+
+.moviePage h1 {
+  color: var(--mint11);
+  font-family: "Castoro Titling", cursive;
+  font-size: 75px;
+  margin-top: 100px;
+}
+
+.moviePage p {
+  color: var(--mint8);
+}
+
+#browseButton {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--mint12);
+
+  padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border: 1px solid var(--mint6);
+  border-radius: 2px;
+
+  background-color: transparent;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  magin-top: 50px;
+}
+
+#browseButton:hover {
+  color: rgba(45, 12, 98, 1);
+  background-color: rgb(255, 186, 82);
+  border: 1px solid rgba(45, 12, 98, 1);
+}
+
+/*Search bar CSS*/
+
+.searchBar {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: rgb(255, 186, 82);
+  margin: 30px;
+
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#year {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: var(--mint9);
+
+  padding: 10px;
+  border: 1px solid var(--mint8);
+  border-radius: 2px;
+
+  background-color: transparent;
+  transition: all 0.2s ease;
+  cursor: pointer;
+
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.searchBar #search {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: var(--mint9);
+
+  padding: 10px;
+  border: 1px solid var(--mint8);
+  border-radius: 2px;
+
+  background-color: #262c2e;
+  transition: all 0.2s ease;
+}
+
+/*Grid css*/
+
+.movieGrid {
+  margin: 50px;
+}
+
+.gridStyle {
+  border: 1px solid var(--mint8);
+}
+
+/*ind movie css */
+
+.movieInd h1 {
+  color: var(--mint11);
+  font-family: "Castoro Titling", cursive;
+  margin-top: 100px;
+  text-align: center;
+  font-size: 75px;
+}
+
+.movieInd #birthYear {
+  color: var(--mint12);
+  font-family: "Castoro Titling", cursive;
+  text-align: center;
+}
+
+.movieInd #roles {
+  color: var(--mint12);
+  font-family: "Castoro Titling", cursive;
+  font-size: 20px;
+}
+
+.movieInd h3 {
+  color: var(--mint12);
+  font-family: "Castoro Titling", cursive;
+}
+
+.movieInd {
+  color: var(--mint12);
+}
+
+.movieInd #plot {
+  /*font-family: 'Castoro Titling', cursive;*/
+  height: auto;
+  width: 700px;
+
+  color: rgb(255, 186, 82);
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.7;
+  font-weight: bold;
+  text-align: center;
+}
+
+.movieInd .genreLabel {
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin: 10px;
+  margin-top: 10px;
+  padding: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  /*font-family: 'Monsieur La Doulaise', cursive;*/
+}
+
+.movieInd .genres {
+  margin-bottom: 30px;
+  /*align-items: center;*/
+  text-align: center;
+}
+
+.movieInd hr {
+  width: 50%;
+  color: rgb(255, 186, 82);
+  margin: auto;
+  padding-bottom: 50px;
+}
+
+/*.movieInd #plot{*/
+/*    !*margin-right: 10px;*!*/
+/*    !*margin-left: 10px;*!*/
+/*    !*text-align: center;*!*/
+/*    height: 300px;*/
+/*    width: 800px;*/
+/*    text-align: center;*/
+/*}*/
+
+.movieInd #imgContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.movieStats {
+  width: 300px;
+  height: 300px;
+  margin-top: -600px;
+
+  /*font-size: .9rem;*/
+  font-weight: bold;
+  color: var(--mint12);
+
+  padding: 10px;
+  /*border: 1px solid var(--mint8);*/
+  /*border-radius: 10px;*/
+
+  /*background-color: #262C2E;*/
+  font-family: "Castoro Titling", cursive;
+  font-size: large;
+}
+
+.movieBody {
+  height: 500px;
+  background: rgb(0, 86, 74);
+  background: radial-gradient(
+    circle,
+    rgba(0, 86, 74, 1) 0%,
+    rgba(8, 25, 23, 1) 91%
+  );
+}
+
+.ratings {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: var(--mint12);
+  padding: 10px;
+  font-family: "Castoro Titling", cursive;
+  margin-top: -450px;
+}
+
+#ratingsValue {
+  display: inline;
+  font-family: none;
+}
+
+.movieInd img {
+  border: 3px solid var(--mint9);
+  margin-top: 25px;
+  height: 450px;
+  width: 300px;
+}
+
+.movieIndGrid {
+  margin-top: 500px;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: var(--mint12);
+  padding: 10px;
+  font-family: "Castoro Titling", cursive;
+}
+
+.movieInd #ratingsTable {
+  border: 3px solid var(--mint9);
+}
+
+#graph {
+  height: 1000px;
+  width: 1000px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: -500px;
+}
+
+.registerCss {
+  text-align: center;
+}
+
+.registerCss .registerForm {
+  padding: 30px;
+}
+
+.registerCss h1 {
+  color: var(--mint11);
+  font-family: "Castoro Titling", cursive;
+  margin-top: 100px;
+  text-align: center;
+}
+
+#alertLink {
+  color: aquamarine;
+}
+
+.registerInput {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: var(--mint9);
+  padding: 10px;
+  border: 1px solid var(--mint8);
+  border-radius: 2px;
+  background-color: #262c2e;
+  transition: all 0.2s ease;
+  margin: 2px;
+}
+
+.registerCss p {
+  color: var(--mint12);
+}
+
+/*Card CSS*/
+
+.cardContainer {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  line-height: 1;
+  display: grid;
+  margin-top: 50px;
+}
+
+.cardContainer h1 {
+  color: var(--mint11);
+  font-family: "Castoro Titling", cursive;
+  text-align: left;
+}
+
+.cardContainer h2 {
+  color: var(--mint10);
+  text-align: left;
+}
+
+.gallery {
+  margin-top: -5px;
+  position: relative;
+  display: grid;
+}
+
+.card:last-child {
+  animation: swap 8s linear infinite;
+}
+
+.card {
+  inset: 0;
+  padding: 20px;
+  gap: 3rem;
+  grid-column: 1;
+  grid-row: 1;
+  width: 1500px;
+  margin-top: 25px;
+}
+
+.card2 {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.card_subtitle {
+  color: rgb(255, 186, 82);
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.card_title {
+  color: var(--mint12) !important;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.card_about {
+  max-width: 30%;
+  margin-top: -40px;
+  color: rgb(255, 186, 82);
+  font-size: 0.7rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.7;
+  font-weight: bold;
+  text-align: left;
+}
+
+.card_actions {
+  display: flex;
+  gap: 1rem;
+  padding-bottom: 10px;
+}
+
+.card_action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card_btn {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: rgb(255, 186, 82);
+
+  padding: 10px;
+  border: 1px solid rgb(255, 186, 82);
+  border-radius: 2px;
+
+  background-color: transparent;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.card_btn:hover {
+  color: rgba(45, 12, 98, 1);
+  background-color: rgb(255, 186, 82);
+}
+
+@keyframes swap {
+  45% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  95% {
+    opacity: 0;
+    pointer-events: none;
+  }
+  100% {
+    opacity: 1;
+  }
+}

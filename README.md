@@ -1,6 +1,7 @@
-## CAB230 assigment 2 - Client Side Application 
-#### Darcie Pearson, n11046244, 14/5/2023
+## Client Side Application 
+#### Darcie Pearson, 14/5/2023
 
+Movie browsing and searching application that fetches data from IMDB.
 
 # Running this application 
 Due to dependencies clashes, npm install --force must be used to install node modules. Not best practice but was the only way it would work with the modules I have used. 
